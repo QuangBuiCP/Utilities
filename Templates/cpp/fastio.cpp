@@ -1,0 +1,1 @@
+ios_base::sync_with_stdio(false); cin.exceptions(cin.failbit); cin.tie(0);

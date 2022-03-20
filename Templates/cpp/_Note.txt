@@ -1,0 +1,1 @@
+Always set template encoding to UTF-16 (Lttle endian)

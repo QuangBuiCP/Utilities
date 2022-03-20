@@ -1,0 +1,61 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    
+    // Editor config
+    "editor.fontSize": 18,
+    "editor.tabCompletion": "on",
+    "editor.useTabStops": false,
+    "editor.fontLigatures": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono, 'Courier New', monospace",
+    "editor.tabSize": 2,
+    "editor.occurrencesHighlight": false,
+    // "editor.guides.bracketPairs":"active",
+
+    // Disable symbol completition
+    "[cpp]": {
+        "editor.autoClosingBrackets": "never",
+        "editor.suggestOnTriggerCharacters": false,
+    },
+    "[hpp]": {
+        "editor.autoClosingBrackets": "never",
+        "editor.suggestOnTriggerCharacters": false,
+    },
+    "[c]": {
+        "editor.autoClosingBrackets": "never",
+        "editor.suggestOnTriggerCharacters": false,
+    },
+    "[h]": {
+        "editor.autoClosingBrackets": "never",
+        "editor.suggestOnTriggerCharacters": false,
+    },
+
+    // Terminal config
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.cursorWidth": 2,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    
+    // Extension: "C/C++ Compile Run"
+    "c-cpp-compile-run.cpp-flags": "-std=c++17 -DLOCAL -ggdb3 -Wall -Wextra -Wunused-variable -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -D_GLIBCXX_ASSERTIONS -fno-sanitize-recover -fstack-protector",
+
+    // Colorscheme setting
+    "workbench.colorTheme": "One Dark Pro",
+    "oneDarkPro.italic": false,
+    "oneDarkPro.color": {
+        "chalky": "",
+        "coral": "#b5e3cc",
+        "dark": "",
+        "error": "",
+        "fountainBlue": "",
+        "green": "",
+        "invalid": "",
+        "lightDark": "",
+        "lightWhite": "",
+        "malibu": "",
+        "purple": "",
+        "whiskey": "",
+        "deepRed": ""
+    },
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true
+}
