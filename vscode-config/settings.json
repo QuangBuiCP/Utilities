@@ -15,19 +15,19 @@
     // Disable symbol completition
     "[cpp]": {
         "editor.autoClosingBrackets": "never",
-        "editor.suggestOnTriggerCharacters": false,
+        "editor.suggestOnTriggerCharacters": false
     },
     "[hpp]": {
         "editor.autoClosingBrackets": "never",
-        "editor.suggestOnTriggerCharacters": false,
+        "editor.suggestOnTriggerCharacters": false
     },
     "[c]": {
         "editor.autoClosingBrackets": "never",
-        "editor.suggestOnTriggerCharacters": false,
+        "editor.suggestOnTriggerCharacters": false
     },
     "[h]": {
         "editor.autoClosingBrackets": "never",
-        "editor.suggestOnTriggerCharacters": false,
+        "editor.suggestOnTriggerCharacters": false
     },
 
     // Terminal config
