@@ -57,5 +57,8 @@
         "whiskey": "",
         "deepRed": ""
     },
-    "javascript.inlayHints.functionLikeReturnTypes.enabled": true
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "vscode-neovim.neovimExecutablePaths.win32": "D:\\QuangBui\\_AppFolder\\NVim\\Neovim\\bin\\nvim.exe",
+    "vscode-neovim.neovimInitVimPaths.win32": "D:\\QuangBui\\_Utilities\\vscode-config\\init.vim",
+    "editor.cursorBlinking": "solid"
 }
