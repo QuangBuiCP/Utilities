@@ -15,18 +15,22 @@
     // Disable symbol completition
     "[cpp]": {
         "editor.autoClosingBrackets": "never",
+        "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false
     },
     "[hpp]": {
         "editor.autoClosingBrackets": "never",
+        "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false
     },
     "[c]": {
         "editor.autoClosingBrackets": "never",
+        "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false
     },
     "[h]": {
         "editor.autoClosingBrackets": "never",
+        "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false
     },
 
