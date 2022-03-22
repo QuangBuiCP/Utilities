@@ -3,7 +3,7 @@
  *    - <iostream>
  *    - <vector>
  *    - <tuple>
- *    - <cstring>
+ *    - <string>
  *    - <bitset>
 **/
 
