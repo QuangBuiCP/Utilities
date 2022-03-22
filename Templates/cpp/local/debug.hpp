@@ -73,12 +73,12 @@ std::string to_string(std::pair<A, B> p) {
  
 template <typename A, typename B, typename C>
 std::string to_string(std::tuple<A, B, C> p) {
-  return "(" + to_string(get<0>(p)) + ", " + to_string(get<1>(p)) + ", " + to_string(get<2>(p)) + ")";
+  return "(" + to_string(std::get<0>(p)) + ", " + to_string(std::get<1>(p)) + ", " + to_string(std::get<2>(p)) + ")";
 }
  
 template <typename A, typename B, typename C, typename D>
 std::string to_string(std::tuple<A, B, C, D> p) {
-  return "(" + to_string(get<0>(p)) + ", " + to_string(get<1>(p)) + ", " + to_string(get<2>(p)) + ", " + to_string(get<3>(p)) + ")";
+  return "(" + to_string(std::get<0>(p)) + ", " + to_string(std::get<1>(p)) + ", " + to_string(std::get<2>(p)) + ", " + to_string(std::get<3>(p)) + ")";
 }
  
 void debug_out() { std::cerr << '\n'; }
