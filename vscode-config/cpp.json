@@ -42,7 +42,7 @@
 			"(*) Note: ",
 			" - Use \"(a + b - 1) / b\" instead of \"ceil(a / b)\"",
 			"",
-			"*/",
+			"*/"
 		],
 		"description": "C++ new source code with test cases"
 	},
@@ -74,7 +74,7 @@
 			"  ;",
 			"",
 			"  return 0;",
-			"}",
+			"}"
 		],
 		"description": "C++ new source code with OI format"
 	},
@@ -117,7 +117,7 @@
 			"(*) Note: ",
 			" - Use \"(a + b - 1) / b\" instead of \"ceil(a / b)\"",
 			"",
-			"*/",
+			"*/"
 		],
 		"description": "C++ new source code"
 	}

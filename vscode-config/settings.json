@@ -12,11 +12,11 @@
     "editor.occurrencesHighlight": false,
     // "editor.guides.bracketPairs":"active",
 
-    // Disable symbol completition
+    // Disable symbol completion
     "[cpp]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
-        "editor.suggestOnTriggerCharacters": false
+        "editor.suggestOnTriggerCharacters": false,
     },
     "[hpp]": {
         "editor.autoClosingBrackets": "never",
