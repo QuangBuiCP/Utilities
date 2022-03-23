@@ -4,10 +4,10 @@
  *    Created: $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DATE.$CURRENT_MONTH.$CURRENT_YEAR (GMT + 7)
 **/
 #include <iostream>
-#include <cstring>
 #include <iomanip>
 #include <vector>
 #include <bitset>
+#include <string>
 #include <tuple>
 #include <ctime>
 using namespace std;
