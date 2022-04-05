@@ -19,4 +19,4 @@
 -D_GLIBCXX_ASSERTIONS
 -fno-sanitize-recover
 -fstack-protector
--Wconversion
+--target=x86_64-pc-windows-gnu
