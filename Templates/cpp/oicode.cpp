@@ -7,19 +7,19 @@
 using namespace std;
 
 signed main() {
-  #ifndef LOCAL
-  ios_base::sync_with_stdio(false);
-  cin.exceptions(cin.failbit);
-  cin.tie(0);
-  bool NEEDFILE = $0;
-  if (NEEDFILE) {
-    #define TASKNAME 
-    freopen(TASKNAME".inp", "r", stdin);
-    freopen(TASKNAME".out", "w", stdout);
-  }
-  #endif // LOCAL
+	#ifndef LOCAL
+	ios_base::sync_with_stdio(false);
+	cin.exceptions(cin.failbit);
+	cin.tie(0);
+	bool NEEDFILE = $0;
+	if (NEEDFILE) {
+		#define TASKNAME 
+		freopen(TASKNAME".inp", "r", stdin);
+		freopen(TASKNAME".out", "w", stdout);
+	}
+	#endif // LOCAL
 
-  ;
+	;
 
-  return 0;
+	return 0;
 }
