@@ -28,6 +28,30 @@ std::string to_string(bool b) {
 	return (b ? "true" : "false");
 }
  
+std::string to_string(int x) {
+	return std::to_string(x);
+}
+ 
+std::string to_string(long x) {
+	return std::to_string(x);
+}
+ 
+std::string to_string(long long x) {
+	return std::to_string(x);
+}
+ 
+std::string to_string(double x) {
+	return std::to_string(x);
+}
+ 
+std::string to_string(long double x) {
+	return std::to_string(x);
+}
+ 
+std::string to_string(float x) {
+	return std::to_string(x);
+}
+ 
 std::string to_string(std::vector<bool> v) {
 	bool first = true;
 	std::string res = "{";
@@ -42,10 +66,10 @@ std::string to_string(std::vector<bool> v) {
 	return res;
 }
  
-template <size_t N>
+template <std::size_t N>
 std::string to_string(std::bitset<N> v) {
 	std::string res = "";
-	for (size_t i = 0; i < N; i++) {
+	for (std::size_t i = 0; i < N; i++) {
 		res += static_cast<char>('0' + v[i]);
 	}
 	return res;
@@ -90,7 +114,7 @@ void debug_out(Head H, Tail... T) {
 }
  
 #ifdef LOCAL
-#define debug(...) cerr << "[" << #__VA_ARGS__ << "]:", debug_out(__VA_ARGS__)
+#define debug(...) std::cerr << "[" << #__VA_ARGS__ << "]:", debug_out(__VA_ARGS__)
 #else
 #define debug(...)
 #endif
