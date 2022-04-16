@@ -5,9 +5,9 @@
 **/
 #include "bits/stdc++.h"
 #ifdef LOCAL
-	#include "local/debug.hpp"
+#include "local/debug.hpp"
 #else
-	#define debug(...)
+#define debug(...)
 #endif
 using namespace std;
 
@@ -18,15 +18,15 @@ void MAIN() {
 }
 
 signed main() {
-	#ifndef LOCAL
-		std::ios_base::sync_with_stdio(false);
-		std::cin.exceptions(std::cin.failbit);
-		std::cin.tie(0);
-	#endif
+#ifndef LOCAL
+	std::ios_base::sync_with_stdio(false);
+	std::cin.exceptions(std::cin.failbit);
+	std::cin.tie(0);
+#endif // LOCAL
 	MAIN();
-	#ifdef LOCAL
-		std::clog << "\nTime elapsed: " << std::fixed << std::setprecision(4) << float(clock()) / CLOCKS_PER_SEC << " seconds.";
-	#endif
+#ifdef LOCAL
+	std::clog << "\nTime elapsed: " << std::fixed << std::setprecision(4) << float(clock()) / CLOCKS_PER_SEC << " seconds.";
+#endif // LOCAL
 }
 
 /*

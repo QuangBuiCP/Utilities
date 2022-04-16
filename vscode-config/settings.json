@@ -34,7 +34,10 @@
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false
     },
-    
+
+    // Change auto-format type
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+
     // Terminal config
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",

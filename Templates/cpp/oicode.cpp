@@ -7,7 +7,7 @@
 using namespace std;
 
 signed main() {
-	#ifndef LOCAL
+#ifndef LOCAL
 	ios_base::sync_with_stdio(false);
 	cin.exceptions(cin.failbit);
 	cin.tie(0);
@@ -17,7 +17,7 @@ signed main() {
 		freopen(TASKNAME".inp", "r", stdin);
 		freopen(TASKNAME".out", "w", stdout);
 	}
-	#endif // LOCAL
+#endif // LOCAL
 
 	;
 
