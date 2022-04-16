@@ -8,6 +8,7 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.fontFamily": "JetBrainsMono Nerd Font Mono, 'Courier New', monospace",
     "editor.useTabStops": true,
+    "editor.insertSpaces": false,
     "editor.tabSize": 4,
     "editor.occurrencesHighlight": false,
     // "editor.guides.bracketPairs":"active",
