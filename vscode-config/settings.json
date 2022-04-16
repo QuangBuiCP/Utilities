@@ -18,25 +18,29 @@
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
+        "editor.formatOnSave": true
     },
     "[hpp]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
-        "editor.suggestOnTriggerCharacters": false
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.formatOnSave": true
     },
     "[c]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
-        "editor.suggestOnTriggerCharacters": false
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.formatOnSave": true
     },
     "[h]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
-        "editor.suggestOnTriggerCharacters": false
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.formatOnSave": true
     },
 
-    // Change auto-format type
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    // Change format setting
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, UseTab: Always, TabWidth: 4, ColumnLimit: 0}",
 
     // Terminal config
     "terminal.integrated.fontSize": 18,
