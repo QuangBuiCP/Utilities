@@ -11,6 +11,7 @@
     "editor.insertSpaces": false,
     "editor.tabSize": 4,
     "editor.occurrencesHighlight": false,
+    "editor.cursorBlinking": "solid",
     // "editor.guides.bracketPairs":"active",
 
     // Disable symbol completion
@@ -18,25 +19,25 @@
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
-        "editor.formatOnSave": true
+        // "editor.formatOnSave": true
     },
     "[hpp]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
-        "editor.formatOnSave": true
+        // "editor.formatOnSave": true
     },
     "[c]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
-        "editor.formatOnSave": true
+        // "editor.formatOnSave": true
     },
     "[h]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
-        "editor.formatOnSave": true
+        // "editor.formatOnSave": true
     },
 
     // Change format setting
@@ -69,9 +70,9 @@
         "whiskey": "",
         "deepRed": ""
     },
-    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-    "editor.cursorBlinking": "solid",
     "C_Cpp.default.compilerArgs": [
         "-std=c++17 -DLOCAL -ggdb3 -Wall -Wextra -Wunused-variable -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -D_GLIBCXX_ASSERTIONS -fno-sanitize-recover -fstack-protector -Wconversion"
-    ]
+    ],
+    "C_Cpp.dimInactiveRegions": false,
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true
 }

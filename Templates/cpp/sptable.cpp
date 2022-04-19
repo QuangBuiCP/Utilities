@@ -1,10 +1,10 @@
 /**
  *  --------------------------------------------------------------------------
  *    Author:          QuangBuiCP
- *    Template:        Sparse Table (Bugged) (0-indexed)
+ *    Template:        Sparse Table (Modified) (0-indexed)
  *    Original author: tourist
  *    Original source: https://github.com/the-tourist/algo/blob/master/data/sparsetable.cpp
- *    Status:          N/A
+ *    Status:          I fucked up
  *  --------------------------------------------------------------------------
  *    Overall time:   O(n * log(n))
  *    Memory size:    O(n * log(n))
