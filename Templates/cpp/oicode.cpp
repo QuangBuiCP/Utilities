@@ -1,8 +1,8 @@
 /**
  *    File:    $TM_FILENAME
- *    Author:  QaergzBit / QuangBuiCP
+ *    Author:  QuangBuiCP
  *    Created: $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DATE.$CURRENT_MONTH.$CURRENT_YEAR (GMT + 7)
- **/
+**/
 #include "bits/stdc++.h"
 using namespace std;
 
