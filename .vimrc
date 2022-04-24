@@ -1,85 +1,49 @@
-call plug#begin('~/.vim/plugged')
+""" Default config
 
-Plug 'itchyny/lightline.vim'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
+" Vim with all enhancements
+source $VIMRUNTIME/vimrc_example.vim
 
-Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
-Plug 'p00f/nvim-ts-rainbow'
-Plug 'norcalli/nvim-colorizer.lua'
-Plug 'joshdick/onedark.vim'
+" Use the internal diff if available.
+" Otherwise use the special 'diffexpr' for Windows.
+if &diffopt !~# 'internal'
+  set diffexpr=MyDiff()
+endif
+function MyDiff()
+  let opt = '-a --binary '
+  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+  let arg1 = v:fname_in
+  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+  let arg1 = substitute(arg1, '!', '\!', 'g')
+  let arg2 = v:fname_new
+  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+  let arg2 = substitute(arg2, '!', '\!', 'g')
+  let arg3 = v:fname_out
+  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+  let arg3 = substitute(arg3, '!', '\!', 'g')
+  if $VIMRUNTIME =~ ' '
+    if &sh =~ '\<cmd'
+      if empty(&shellxquote)
+        let l:shxq_sav = ''
+        set shellxquote&
+      endif
+      let cmd = '"' . $VIMRUNTIME . '\diff"'
+    else
+      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+    endif
+  else
+    let cmd = $VIMRUNTIME . '\diff'
+  endif
+  let cmd = substitute(cmd, '!', '\!', 'g')
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3
+  if exists('l:shxq_sav')
+    let &shellxquote=l:shxq_sav
+  endif
+endfunction
 
-Plug 'neovim/nvim-lspconfig'
-
-let g:lightline = {
-      \ 'colorscheme': 'onehalfdark',
-      \ 'active': {
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ],
-      \              [ 'fileformat', 'fileencoding', 'filetype', 'charvaluehex' ] ]
-      \ },
-      \ 'component': {
-      \   'charvaluehex': '0x%B'
-      \ },
-      \ }
 
 
-
-call plug#end()
-
-set termguicolors
-lua require'colorizer'.setup()
-
-lua <<OEF
-
---- LSP server
-
-require'lspconfig'.clangd.setup{}
-
---- End of LSP server
-
--- treesitter
-require('nvim-treesitter.configs').setup {
-    ensure_installed = "maintained",
-    highlight = { 
-        enable = true,
-        custom_captures = {
-            ["character"] = "TSString",
-            ["operator"] = "TSStringEscape",
-            ["constructor"] = "TSFunction",
-        }
-    },
-    rainbow = {
-        enable = true,
-        extended_mode = true,
-        max_file_lines = nil,
-
-        -- nvim-ts-rainbow
-        colors = {
-            "#e06c75",
-            "#98c379",
-            "#d19a66",
-            "#61afef",
-            "#c678dd",
-            "#56b6c2",
-            "#828791",
-        }
-        -- end of nvim-ts-rainbow
-    }
-}
--- end of treesitter
-
-OEF
-
-let g:python3_host_prog = 'C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/python.exe'
-
-set guicursor=n-v-c-sm:block,i-ci-ve:ver20-cursor,r-cr-o:hor20
-set guifont=Consolas:h15
-
-set t_Co=256
-colorscheme onedark
-
-set laststatus=2
-set noshowmode
+""" My config
 
 set mouse=a
 set ruler
@@ -93,8 +57,6 @@ set smartindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-
-
 
 set hlsearch
 set smartcase
@@ -127,23 +89,6 @@ augroup remember_folds
   autocmd BufWinLeave * mkview
   autocmd BufWinEnter * silent! loadview
 augroup END
-
-" LSP for Clangd
-if executable('clangd')
-    augroup lsp_clangd
-        autocmd!
-        autocmd User lsp_setup call lsp#register_server({
-                    \ 'name': 'clangd',
-                    \ 'cmd': {server_info->['clangd']},
-                    \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
-                    \ })
-        autocmd FileType c setlocal omnifunc=lsp#complete
-        autocmd FileType cpp setlocal omnifunc=lsp#complete
-        autocmd FileType objc setlocal omnifunc=lsp#complete
-        autocmd FileType objcpp setlocal omnifunc=lsp#complete
-    augroup end
-endif
-
 
 " Quick shortcut (Far manager related)
 nnoremap <F2> :w! <CR>
@@ -241,7 +186,8 @@ cnoreabbrev f16 e ++enc=utf-16le
 nnoremap <C-y> dd
 inoremap <C-y> <ESC>dda
 
-
-
 nnoremap t f
 
+" Build and run for *.cpp
+autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++14 % -o %:r -Wl,--stack,268435456<CR>
+autocmd filetype cpp nnoremap <F10> :!%:r<CR>
