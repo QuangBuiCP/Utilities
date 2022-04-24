@@ -191,3 +191,7 @@ nnoremap t f
 " Build and run for *.cpp
 autocmd filetype cpp nnoremap <F9> :w <bar> !com %:r && echo.<CR>
 autocmd filetype cpp nnoremap <F10> :!%:r && echo.<CR>
+autocmd filetype cpp inoremap <F9> <ESC>:w <bar> !com %:r && echo.<CR>
+autocmd filetype cpp inoremap <F10> <ESC>:!%:r && echo.<CR>
+
+set guifont=Consolas:h15
