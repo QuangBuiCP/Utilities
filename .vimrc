@@ -189,5 +189,5 @@ inoremap <C-y> <ESC>dda
 nnoremap t f
 
 " Build and run for *.cpp
-autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++14 % -o %:r -Wl,--stack,268435456<CR>
-autocmd filetype cpp nnoremap <F10> :!%:r<CR>
+autocmd filetype cpp nnoremap <F9> :w <bar> !com %:r && echo.<CR>
+autocmd filetype cpp nnoremap <F10> :!%:r && echo.<CR>
