@@ -8,6 +8,7 @@ Path/sublime.*
 Path/geany.*
 Path/vim.*
 Path/vifm.*
+Path/gvim.*
 
 Path/ggdb.cmd
 Path/farr.cmd
