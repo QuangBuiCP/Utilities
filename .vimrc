@@ -81,15 +81,6 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" Save file folding
-" 'mkview' to save the fold
-" 'loadview' to load the last saved fold
-augroup remember_folds
-  autocmd!
-  autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent! loadview
-augroup END
-
 " Quick shortcut (Far manager related)
 nnoremap <F2> :w! <CR>
 inoremap <F2> <ESC>:w!<CR>a
