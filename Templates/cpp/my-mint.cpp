@@ -7,14 +7,28 @@
 	friend inline type operator op(type u, const type& v) { return u op ##= v; } \
 	type& operator op ##= (const type& o)
 
+template<class T>
+T power(T base, int64_t exp) {
+	T ret = 1;
+	for ( ; exp > 0; exp /= 2, base *= base) {
+		if (exp & 1) {
+			ret *= base;
+		}
+	}
+	return ret;
+}
+
 #define int int64_t
 
 template<int MOD>
 struct modint {
 	int x;
 
-	template<typename T>
-	modint(T x_ = 0LL) : x(x_ % MOD) {}
+	modint(int x_ = 0LL) : x(x_ % MOD) {
+		if (x < 0) {
+			x += MOD;
+		}
+	}
 
 	defop(modint, +) {
 		if ((x += o.x) >= MOD) {
@@ -34,30 +48,20 @@ struct modint {
 		return *this = modint(1LL * x * o.x);
 	}
 
-	modint pow(int exp) const {
-		modint base = *this, ret = 1;
-		for ( ; exp > 0; exp /= 2, base *= base) {
-			if (exp & 1) {
-				ret *= base;
-			}
-		}
-		return ret;
-	}
-
 	defop(modint, /) {
-		return *this *= o.pow(MOD - 2);
+		return *this *= power(o, MOD - 2);
 	}
 };
 
 #undef int
 
-using Mint = modint<998244353>;
+using mint = modint<(int) 1e9 + 7>;
 
 /*
-vector<Mint> fact(1, 1);
-vector<Mint> inv_fact(1, 1);
+vector<mint> fact(1, 1);
+vector<mint> inv_fact(1, 1);
  
-Mint C(int n, int k) {
+mint C(int n, int k) {
 	if (k < 0 || k > n) {
 		return 0;
 	}
