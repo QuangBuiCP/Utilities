@@ -3,6 +3,7 @@ set guifont=Consolas:h15
 
 set t_Co=256
 colorscheme onedark
+set cmdheight=1
 
 set laststatus=2
 set noshowmode
@@ -53,7 +54,6 @@ augroup remember_folds
   autocmd BufWinLeave * mkview
   autocmd BufWinEnter * silent! loadview
 augroup END
-
 
 set termguicolors
 lua require'colorizer'.setup()

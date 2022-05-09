@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
@@ -8,7 +8,10 @@ Plug 'p00f/nvim-ts-rainbow'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'joshdick/onedark.vim'
 
+Plug 'lukas-reineke/indent-blankline.nvim'
+
 Plug 'neovim/nvim-lspconfig'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 let g:lightline = {
       \ 'colorscheme': 'onehalfdark',
@@ -21,7 +24,6 @@ let g:lightline = {
       \   'charvaluehex': '0x%B'
       \ },
       \ }
-
 
 
 call plug#end()
