@@ -49,11 +49,8 @@ endif
 " Save file folding
 " 'mkview' to save the fold
 " 'loadview' to load the last saved fold
-augroup remember_folds
-  autocmd!
-  autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent! loadview
-augroup END
+au BufWinLeave ?* mkview
+au BufWinEnter ?* silent loadview
 
 set termguicolors
 lua require'colorizer'.setup()
