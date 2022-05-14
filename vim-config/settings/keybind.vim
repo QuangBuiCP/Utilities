@@ -31,7 +31,7 @@ vnoremap k <DOWN>
 vnoremap l <RIGHT>
 
 noremap <C-k> <C-d>
-noremap <C-i> <C-u>
+noremap <C-j> <C-u>
 
 
 " Use "a" as insert mode instead of "i"
