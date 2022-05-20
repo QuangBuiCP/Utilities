@@ -6,6 +6,8 @@ inoremap <F2> <ESC>:w!<CR>a
 "inoremap <F1> <ESC>:wq! <CR>
 nnoremap <F4> :q<CR>
 inoremap <F4> <ESC>:q<CR>a
+nnoremap <F5> :q!<CR>
+inoremap <F5> <ESC>:q!<CR>a
 
 " Ctrl + S for save (?)
 nnoremap <C-s> :w!<CR>

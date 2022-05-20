@@ -21,3 +21,6 @@ Path/mkcpp.cmd
 Path/tp.cmd
 
 Path/proexp.*
+
+
+vim-config/settings/python_provider.vim
