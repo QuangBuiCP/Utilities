@@ -7,6 +7,8 @@
  *    - <bitset>
 **/
 
+// Required using namespace std for some reason
+
 template <typename A, typename B>
 std::string to_string(std::pair<A, B> p);
  
@@ -18,38 +20,6 @@ std::string to_string(std::tuple<A, B, C, D> p);
  
 std::string to_string(const std::string& s) {
 	return '"' + s + '"';
-}
- 
-std::string to_string(const char* s) {
-	return to_string((std::string) s);
-}
- 
-std::string to_string(bool b) {
-	return (b ? "true" : "false");
-}
- 
-std::string to_string(int x) {
-	return std::to_string(x);
-}
- 
-std::string to_string(long x) {
-	return std::to_string(x);
-}
- 
-std::string to_string(long long x) {
-	return std::to_string(x);
-}
- 
-std::string to_string(double x) {
-	return std::to_string(x);
-}
- 
-std::string to_string(long double x) {
-	return std::to_string(x);
-}
- 
-std::string to_string(float x) {
-	return std::to_string(x);
 }
  
 std::string to_string(std::vector<bool> v) {

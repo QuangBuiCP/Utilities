@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'vim-airline/vim-airline'
@@ -10,6 +9,7 @@ Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'joshdick/onedark.vim'
+"Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

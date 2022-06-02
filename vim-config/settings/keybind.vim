@@ -21,6 +21,7 @@ nnoremap l <RIGHT>
 nnoremap q b
 nnoremap u 0
 nnoremap 0 $
+vnoremap q b
 vnoremap u 0
 vnoremap 0 $
 inoremap <A-j> <LEFT>
@@ -38,8 +39,10 @@ noremap <C-j> <C-u>
 
 " Use "a" as insert mode instead of "i"
 nnoremap a i
+vnoremap a i
 " Use "f" as insert mode instead of "a"
 nnoremap f a
+vnoremap f a
 
 " Switch to command mode
 inoremap <A-u> <ESC>:

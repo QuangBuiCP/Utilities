@@ -101,6 +101,7 @@ nnoremap l <RIGHT>
 nnoremap q b
 nnoremap u 0
 nnoremap 0 $
+vnoremap q b
 vnoremap u 0
 vnoremap 0 $
 inoremap <A-j> <LEFT>

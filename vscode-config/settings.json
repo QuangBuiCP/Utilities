@@ -12,6 +12,7 @@
     "editor.tabSize": 4,
     "editor.occurrencesHighlight": false,
     "editor.cursorBlinking": "solid",
+    "editor.inlayHints.enabled": "off",
     // "editor.guides.bracketPairs":"active",
 
     // Disable symbol completion
@@ -19,30 +20,56 @@
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
+        // Show suggestion only when pressing Ctrl+Space
+        "editor.quickSuggestions": false,
+        "editor.wordBasedSuggestions": false,
+        "editor.quickSuggestionsDelay": 1000000,
+        // Show hint only when pressing Ctrl+Shift+Space
+        "editor.parameterHints.enabled": false,
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
         // "editor.formatOnSave": true
     },
     "[hpp]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
+        // Show suggestion only when pressing Ctrl+Space
+        "editor.quickSuggestions": false,
+        "editor.wordBasedSuggestions": false,
+        "editor.quickSuggestionsDelay": 1000000,
+        // Show hint only when pressing Ctrl+Shift+Space
+        "editor.parameterHints.enabled": false,
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
         // "editor.formatOnSave": true
     },
     "[c]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
+        // Show suggestion only when pressing Ctrl+Space
+        "editor.quickSuggestions": false,
+        "editor.wordBasedSuggestions": false,
+        "editor.quickSuggestionsDelay": 1000000,
+        // Show hint only when pressing Ctrl+Shift+Space
+        "editor.parameterHints.enabled": false,
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
         // "editor.formatOnSave": true
     },
     "[h]": {
         "editor.autoClosingBrackets": "never",
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
+        // Show suggestion only when pressing Ctrl+Space
+        "editor.quickSuggestions": false,
+        "editor.wordBasedSuggestions": false,
+        "editor.quickSuggestionsDelay": 1000000,
+        // Show hint only when pressing Ctrl+Shift+Space
+        "editor.parameterHints.enabled": false,
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
         // "editor.formatOnSave": true
     },
 
-    // Change format setting
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, UseTab: Always, TabWidth: 4, ColumnLimit: 0}",
-
+    
     // Terminal config
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
@@ -67,12 +94,48 @@
         "whiskey": "",
         "deepRed": ""
     },
+
+    // Extension: C++
     "C_Cpp.default.compilerArgs": [
         "-std=c++17 -DLOCAL -ggdb3 -Wall -Wextra -Wunused-variable -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -D_GLIBCXX_ASSERTIONS -fno-sanitize-recover -fstack-protector -Wconversion"
     ],
-    "C_Cpp.dimInactiveRegions": false,
+    // Change format setting
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, UseTab: Always, TabWidth: 4, ColumnLimit: 0}",
+
     "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
     "footsteps.doHighlightChanges": false,
     "markdown.preview.fontSize": 18,
-    "workbench.colorTheme": "One Dark Pro"
+    "errorLens.fontStyleItalic": true,
+    "errorLens.messageBackgroundMode": "none",
+    "workbench.colorTheme": "One Dark Pro",
+    "code-eol.color": "#565E67",
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "D:\\QuangBui\\_AppFolder\\NVim\\Neovim\\bin\\nvim.exe",
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "D:\\QuangBui\\_Utilities\\vim-config\\_vimrc",
+
+    // Setting to use Far manager in terminal
+    // "workbench.colorCustomizations" : {
+    //     "terminal.background":"#000000",
+    //     "terminal.foreground":"#C0C0C0",
+    //     "terminalCursor.background":"#FFFFFF",
+    //     "terminalCursor.foreground":"#FFFFFF",
+    //     "terminal.ansiBlack":"#000000",
+    //     "terminal.ansiBlue":"#000080",
+    //     "terminal.ansiBrightBlack":"#808080",
+    //     "terminal.ansiBrightBlue":"#0000FF",
+    //     "terminal.ansiBrightCyan":"#00FFFF",
+    //     "terminal.ansiBrightGreen":"#00FF00",
+    //     "terminal.ansiBrightMagenta":"#FF00FF",
+    //     "terminal.ansiBrightRed":"#FF0000",
+    //     "terminal.ansiBrightWhite":"#F7F7F7",
+    //     "terminal.ansiBrightYellow":"#FFFF00",
+    //     "terminal.ansiCyan":"#008080",
+    //     "terminal.ansiGreen":"#008000",
+    //     "terminal.ansiMagenta":"#800080",
+    //     "terminal.ansiRed":"#800000",
+    //     "terminal.ansiWhite":"#A5A2A2",
+    //     "terminal.ansiYellow":"#808000"
+    // },
+    // "terminal.integrated.sendKeybindingsToShell": true,
 }
