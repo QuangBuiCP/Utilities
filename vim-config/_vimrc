@@ -119,8 +119,10 @@ autocmd filetype cpp vnoremap <C-e> :s/^\(\s*\)/\1\/\/<CR> :s/^\(\s*\)\/\/\/\//\
 
 " Use "a" as insert mode instead of "i"
 nnoremap a i
+vnoremap a i
 " Use "f" as insert mode instead of "a"
 nnoremap f a
+vnoremap f a
 
 " Switch to command mode
 inoremap <A-u> <ESC>:

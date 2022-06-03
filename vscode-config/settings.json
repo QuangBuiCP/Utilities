@@ -9,6 +9,7 @@
     "editor.fontFamily": "JetBrainsMono Nerd Font Mono, 'Courier New', monospace",
     "editor.useTabStops": true,
     "editor.insertSpaces": false,
+    "editor.detectIndentation": true,
     "editor.tabSize": 4,
     "editor.occurrencesHighlight": false,
     "editor.cursorBlinking": "solid",
@@ -109,10 +110,14 @@
     "errorLens.messageBackgroundMode": "none",
     "workbench.colorTheme": "One Dark Pro",
     "code-eol.color": "#565E67",
+    "vim.incsearch": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
     "vim.enableNeovim": true,
-    "vim.neovimPath": "D:\\QuangBui\\_AppFolder\\NVim\\Neovim\\bin\\nvim.exe",
+    "vim.neovimPath": "...",
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "D:\\QuangBui\\_Utilities\\vim-config\\_vimrc",
+    "vim.vimrc.path": "...",
+    "vim.shell": "...",
 
     // Setting to use Far manager in terminal
     // "workbench.colorCustomizations" : {

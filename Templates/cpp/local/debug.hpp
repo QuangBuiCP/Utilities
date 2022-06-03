@@ -7,8 +7,6 @@
  *    - <bitset>
 **/
 
-// Required using namespace std for some reason
-
 template <typename A, typename B>
 std::string to_string(std::pair<A, B> p);
  
@@ -79,6 +77,7 @@ void debug_out() { std::cerr << '\n'; }
  
 template <typename Head, typename... Tail>
 void debug_out(Head H, Tail... T) {
+	using namespace std;
 	std::cerr << " " << to_string(H);
 	debug_out(T...);
 }
