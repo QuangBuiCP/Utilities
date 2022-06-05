@@ -6,7 +6,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'lukas-reineke/indent-blankline.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
-Plug 'p00f/nvim-ts-rainbow'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'joshdick/onedark.vim'
 "Plug 'catppuccin/nvim', {'as': 'catppuccin'}
