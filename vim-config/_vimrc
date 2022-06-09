@@ -113,6 +113,9 @@ vnoremap i <UP>
 vnoremap k <DOWN>
 vnoremap l <RIGHT>
 
+noremap <C-k> <C-d>
+noremap <C-j> <C-u>
+
 " Comment line of code in C++ with "Ctrl+e"
 autocmd filetype cpp nnoremap <C-e> :s/^\(\s*\)/\1\/\/<CR> :s/^\(\s*\)\/\/\/\//\1<CR> $
 autocmd filetype cpp vnoremap <C-e> :s/^\(\s*\)/\1\/\/<CR> :s/^\(\s*\)\/\/\/\//\1<CR> $

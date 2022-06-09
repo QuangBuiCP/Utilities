@@ -95,6 +95,8 @@ inoremap <C-y> <ESC>dda
 
 nnoremap t f
 
+tnoremap <Esc> <C-\><C-n>
+
 " Build and run for *.cpp
 autocmd filetype cpp nnoremap <F9> :w <bar> !start pauser com %:r && echo.<CR>
 " autocmd filetype cpp nnoremap <F10> :!start pauser !%:r && echo.<CR>

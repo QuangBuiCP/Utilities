@@ -13,7 +13,7 @@
     "editor.tabSize": 4,
     "editor.occurrencesHighlight": false,
     "editor.cursorBlinking": "solid",
-    "editor.inlayHints.enabled": "off",
+    "editor.inlayHints.enabled": false,
     // "editor.guides.bracketPairs":"active",
 
     // Disable symbol completion
@@ -114,10 +114,11 @@
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "vim.enableNeovim": true,
-    "vim.neovimPath": "...",
+    "vim.neovimPath": "D:\\QuangBui\\_AppFolder\\NVim\\Neovim\\bin\\nvim.exe",
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "...",
-    "vim.shell": "...",
+    "vim.vimrc.path": "D:\\QuangBui\\_Utilities\\vim-config\\_vimrc",
+    "vim.shell": "C:\\Windows\\System32\\cmd.exe",
+    "vim.smartRelativeLine": true,
 
     // Setting to use Far manager in terminal
     // "workbench.colorCustomizations" : {
