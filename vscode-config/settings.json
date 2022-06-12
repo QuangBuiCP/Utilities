@@ -22,7 +22,11 @@
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
         // Show suggestion only when pressing Ctrl+Space
-        "editor.quickSuggestions": false,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
         "editor.wordBasedSuggestions": false,
         "editor.quickSuggestionsDelay": 1000000,
         // Show hint only when pressing Ctrl+Shift+Space
@@ -35,7 +39,11 @@
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
         // Show suggestion only when pressing Ctrl+Space
-        "editor.quickSuggestions": false,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
         "editor.wordBasedSuggestions": false,
         "editor.quickSuggestionsDelay": 1000000,
         // Show hint only when pressing Ctrl+Shift+Space
@@ -48,7 +56,11 @@
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
         // Show suggestion only when pressing Ctrl+Space
-        "editor.quickSuggestions": false,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
         "editor.wordBasedSuggestions": false,
         "editor.quickSuggestionsDelay": 1000000,
         // Show hint only when pressing Ctrl+Shift+Space
@@ -61,7 +73,11 @@
         "editor.autoClosingQuotes": "never",
         "editor.suggestOnTriggerCharacters": false,
         // Show suggestion only when pressing Ctrl+Space
-        "editor.quickSuggestions": false,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
         "editor.wordBasedSuggestions": false,
         "editor.quickSuggestionsDelay": 1000000,
         // Show hint only when pressing Ctrl+Shift+Space
@@ -119,6 +135,9 @@
     "vim.vimrc.path": "D:\\QuangBui\\_Utilities\\vim-config\\_vimrc",
     "vim.shell": "C:\\Windows\\System32\\cmd.exe",
     "vim.smartRelativeLine": true,
+    "files.associations": {
+        "*.vim": "vimrc"
+    },
 
     // Setting to use Far manager in terminal
     // "workbench.colorCustomizations" : {

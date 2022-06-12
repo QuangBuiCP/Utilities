@@ -191,4 +191,15 @@ autocmd filetype cpp nnoremap <F10> :!%:r && echo.<CR>
 autocmd filetype cpp inoremap <F9> <ESC>:w <bar> !com %:r && echo.<CR>
 autocmd filetype cpp inoremap <F10> <ESC>:!%:r && echo.<CR>
 
-set guifont=Consolas:h15
+set guifont=Bitstream\ Vera\ Sans\ Mono:h15
+
+" No blinking cursor
+silent! set guicursor+=a:blinkon0
+
+inoremap <A-o> <ESC>o
+nnoremap <A-o> o
+
+let g:tokyonight_style = 'storm' " available: night, storm
+let g:tokyonight_disable_italic_comment = 1
+let g:tokyonight_cursor = 'green' " or 'blue'
+" colorscheme tokyonight
