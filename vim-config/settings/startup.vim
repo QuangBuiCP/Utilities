@@ -1,5 +1,5 @@
 set guicursor=n-v-c-sm:block,i-ci-ve:ver20-cursor,r-cr-o:hor20
-set guifont=Consolas:h15
+set guifont=Bitstream\ Vera\ Sans\ Mono:h15
 
 set t_Co=256
 colorscheme onedark

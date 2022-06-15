@@ -9,8 +9,6 @@
 
 // Required "using namespace std" for some reason
 
-namespace Debugger {
-
 template <typename A, typename B>
 string to_string(pair<A, B> p);
  
@@ -93,10 +91,8 @@ void debug_out(Head H, Tail... T) {
 	debug_out(T...);
 }
 
-} // namespace Debugger
-
 #ifdef LOCAL
-#define debug(...) cerr << "[" << #__VA_ARGS__ << "]:", Debugger::debug_out(__VA_ARGS__)
+#define debug(...) cerr << "[" << #__VA_ARGS__ << "]:", debug_out(__VA_ARGS__)
 #else
 #define debug(...)
 #endif
