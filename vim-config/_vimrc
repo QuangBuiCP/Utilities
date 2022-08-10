@@ -188,8 +188,10 @@ nnoremap t f
 " Build and run for *.cpp
 autocmd filetype cpp nnoremap <F9> :w <bar> !com %:r && echo.<CR>
 autocmd filetype cpp nnoremap <F10> :!%:r && echo.<CR>
+autocmd filetype cpp nnoremap <F11> :w <bar> !runner %:r<CR>
 autocmd filetype cpp inoremap <F9> <ESC>:w <bar> !com %:r && echo.<CR>
 autocmd filetype cpp inoremap <F10> <ESC>:!%:r && echo.<CR>
+autocmd filetype cpp inoremap <F11> <ESC>:w <bar> !runner %:r<CR>
 
 " No blinking cursor
 silent! set guicursor+=a:blinkon0
@@ -200,12 +202,17 @@ nnoremap <A-o> o
 let g:tokyonight_style = 'storm' " available: night, storm
 let g:tokyonight_disable_italic_comment = 1
 let g:tokyonight_cursor = 'green' " or 'blue'
-colorscheme tokyonight
+" colorscheme tokyonight
 
 set nobackup
+set nowritebackup
 set noswapfile
+set noundofile
 
 " Fix Ctrl + Space in terminal mode cause weird text
 tnoremap <S-space> <space>
 
-set guifont=Bitstream\ Vera\ Sans\ Mono:h15
+set guifont=Consolas:h15
+" set guifont=Bitstream\ Vera\ Sans\ Mono:h15
+
+cnoreabbrev mktemp r D:/QuangBui/_Code/C++/Cate/Templates/Saved/oicode-vim.cpp

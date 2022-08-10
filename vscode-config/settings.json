@@ -14,7 +14,8 @@
     "editor.occurrencesHighlight": false,
     "editor.cursorBlinking": "solid",
     "editor.inlayHints.enabled": false,
-    // "editor.guides.bracketPairs":"active",
+    "terminal.integrated.shellIntegration.enabled": true,
+ // "editor.guides.bracketPairs":"active",
 
     // Disable symbol completion
     "[cpp]": {
