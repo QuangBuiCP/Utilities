@@ -1,0 +1,13 @@
+{
+	"font_face": "JetBrains Mono Regular Nerd Font Complete Mono",
+	"font_size": 13,
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"theme": "GitHub Adaptive.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"auto_match_enabled": false,
+	// "tab_size": 2,
+	// "translate_tabs_to_spaces": true,
+}

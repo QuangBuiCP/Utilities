@@ -1,0 +1,58 @@
+{
+	"shell_cmd": "g++ -DLOCAL -std=c++17 -std=c++17 -DLOCAL -ggdb3 -Wall -Wextra -Wunused-variable -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -D_GLIBCXX_ASSERTIONS -fno-sanitize-recover -fstack-protector \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.c++, source.cpp, source.cc, source.cxx",
+
+	"variants":
+	[
+		{
+			"name": "Run in Terminal",
+
+			"linux": {
+				"shell_cmd": "xterm -e '${file_path}/${file_base_name} inf.txt ouf.txt ans.txt && echo && echo Press ENTER to continue && read line && exit'",
+				// "shell_cmd": "g++ -DFEXT -std=c++11 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && gnome-terminal -e 'bash -c \"${file_path}/${file_base_name} && echo && echo Press ENTER to continue && read line && exit\"'", // for gnome-terminal
+				// "shell_cmd": "g++ -DFEXT -std=c++11 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && xterm -e '${file_path}/${file_base_name}; bash'", // for xterm
+				// "shell_cmd": "g++ -DFEXT -std=c++11 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && xterm -hold -e ${file_path}/${file_base_name}", // for xterm
+				// "shell_cmd": "g++ -DFEXT -std=c++11 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && konsole --hold -e ${file_path}/./${file_base_name}", // for konsole
+
+			},
+
+			"windows":{
+				"shell_cmd": "start cmd /k \"${file_base_name}\" inf.txt ouf.txt ans.txt",
+				// "shell_cmd": "g++ -DFEXT -std=c++11 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && start \"$file_base_name\" call $file_base_name inf.txt ouf.txt ans.txt"
+			},
+
+			"osx":{
+				"shell_cmd": "xterm -e '${file_path}/${file_base_name} inf.txt ouf.txt ans.txt && echo && echo Press ENTER to continue && read line && exit'",
+			},
+
+			"shell": true,
+		},
+
+
+		{
+			"name": "Compile and Run in Terminal",
+
+			"linux": {
+				"shell_cmd": "g++ -DLOCAL -std=c++17  -std=c++17 -DLOCAL -ggdb3 -Wall -Wextra -Wunused-variable -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -D_GLIBCXX_ASSERTIONS -fno-sanitize-recover -fstack-protector -o \"${file_path}/${file_base_name}\" && xterm -e '${file_path}/${file_base_name} inf.txt ouf.txt ans.txt && echo && echo Press ENTER to continue && read line && exit'",
+				// "shell_cmd": "g++ -DFEXT -std=c++11 -Wl,--stack=268435456 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && gnome-terminal -e 'bash -c \"${file_path}/${file_base_name} && echo && echo Press ENTER to continue && read line && exit\"'", // for gnome-terminal
+				// "shell_cmd": "g++ -DFEXT -std=c++11 -Wl,--stack=268435456 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && xterm -e '${file_path}/${file_base_name}; bash'", // for xterm
+				// "shell_cmd": "g++ -DFEXT -std=c++11 -Wl,--stack=268435456 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && xterm -hold -e ${file_path}/${file_base_name}", // for xterm
+				// "shell_cmd": "g++ -DFEXT -std=c++11 -Wl,--stack=268435456 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && konsole --hold -e ${file_path}/./${file_base_name}", // for konsole
+
+			},
+
+			"windows":{
+				"shell_cmd":   "g++ -DLOCAL -std=c++17  -std=c++17 -DLOCAL -ggdb3 -Wall -Wextra -Wunused-variable -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -D_GLIBCXX_ASSERTIONS -fno-sanitize-recover -fstack-protector \"${file}\" -o \"${file_path}/${file_base_name}\" && start cmd /k \"${file_base_name}\" inf.txt ouf.txt ans.txt",
+				// "shell_cmd":   "g++ -DFEXT -std=c++11 -Wl,--stack=268435456 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && start \"$file_base_name\" call $file_base_name inf.txt ouf.txt ans.txt"
+			},
+
+			"osx":{
+				"shell_cmd": "g++ -DFEXT -std=c++17 -Wl,--stack=268435456 -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && xterm -e '${file_path}/${file_base_name} inf.txt ouf.txt ans.txt && echo && echo Press ENTER to continue && read line && exit'",
+			},
+
+			"shell": true,
+		},
+	]
+}

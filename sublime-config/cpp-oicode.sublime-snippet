@@ -1,5 +1,7 @@
+<snippet>
+  <content><![CDATA[
 // Author: QuangBuiCP
-// Editor: GVim
+// Editor: Sublime Text 4
 #include "bits/stdc++.h"
 using namespace std;
 #ifdef LOCAL
@@ -15,7 +17,13 @@ signed main() {
 	cin.tie(0);
 #endif // LOCAL
 
-	;
+	;$0
 
 	return 0;
 }
+]]></content>
+  <tabTrigger>oicode</tabTrigger>
+  <description>C++ Template</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
