@@ -12,11 +12,19 @@ using namespace std;
 
 signed main() {
 	cin.tie(0)->sync_with_stdio(0);
+#ifndef LOCAL
 	freopen(".INP", "r", stdin);
 	freopen(".OUT", "w", stdout);
+#else
+	freopen("_input.txt", "r", stdin);
+	freopen("_output.txt", "w", stdout);
+#endif
 
 	;$0
 
+#ifdef LOCAL
+	cout << '\n' << clock() << ".ms";
+#endif
 	return 0;
 }
 ]]></content>
