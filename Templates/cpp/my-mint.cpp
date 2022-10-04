@@ -55,13 +55,13 @@ struct modint {
 
 #undef int
 
-using mint = modint<(int) 1e9 + 7>;
+using mint_t = modint<(int) 1e9 + 7>;
 
 /*
-vector<mint> fact(1, 1);
-vector<mint> inv_fact(1, 1);
+vector<mint_t> fact(1, 1);
+vector<mint_t> inv_fact(1, 1);
  
-mint C(int n, int k) {
+mint_t C(int n, int k) {
 	if (k < 0 || k > n) {
 		return 0;
 	}

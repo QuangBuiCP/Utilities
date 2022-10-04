@@ -21,6 +21,7 @@ Path/mkcpp.cmd
 Path/tp.cmd
 
 Path/proexp.*
+Path/speedtest.exe
 
 
 vim-config/settings/python_provider.vim

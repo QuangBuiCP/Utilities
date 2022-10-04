@@ -22,11 +22,11 @@ class SegmentTree {
 		// push from x into (x + 1) and z
 		...
 		/*
-			if (tree[x].add != 0) {
-			  tree[x + 1].apply(l, y, tree[x].add);
-			  tree[z].apply(y + 1, r, tree[x].add);
-			  tree[x].add = 0;
-			}
+		if (tree[x].add != 0) {
+			tree[x + 1].apply(l, y, tree[x].add);
+			tree[z].apply(y + 1, r, tree[x].add);
+			tree[x].add = 0;
+		}
 		*/
 	}
 

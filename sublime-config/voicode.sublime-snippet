@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+// Author: QuangBuiCP
+// Editor: Sublime Text 4
+#include "bits/stdc++.h"
+using namespace std;
+#ifdef LOCAL
+#include "local/debug.hpp"
+#else
+#define debug(...)
+#endif // LOCAL
+
+signed main() {
+	cin.tie(0)->sync_with_stdio(0);
+	freopen(".INP", "r", stdin);
+	freopen(".OUT", "w", stdout);
+
+	;$0
+
+	return 0;
+}
+]]></content>
+  <tabTrigger>voicode</tabTrigger>
+  <description>VOI code</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

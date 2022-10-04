@@ -22,3 +22,4 @@ struct custom_hash {
 	}
 };
 template<class T, class H> using umap = unordered_map<T, H, custom_hash>;
+template<class T> using uset = unordered_set<T, custom_hash>;
