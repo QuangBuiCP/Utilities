@@ -23,7 +23,7 @@ signed main() {
 	;$0
 
 #ifdef LOCAL
-	cout << '\n' << clock() << "ms.";
+	cout << '\n' << clock() << ".ms";
 #endif
 	return 0;
 }
