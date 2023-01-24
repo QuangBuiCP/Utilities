@@ -9,6 +9,7 @@ Path/geany.*
 Path/vim.*
 Path/vifm.*
 Path/gvim.*
+Path/vi.*
 
 Path/ggdb.cmd
 Path/farr.cmd

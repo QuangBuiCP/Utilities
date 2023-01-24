@@ -14,6 +14,7 @@ set ruler
 set showcmd
 set shellslash
 set cursorline
+set scrolloff=5
 
 set autoindent
 set smartindent
