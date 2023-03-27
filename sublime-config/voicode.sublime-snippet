@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-// Author: QuangBuiCP
-// Editor: Sublime Text 4
+// QuangBuiCP
+// $TM_FILENAME
 #include "bits/stdc++.h"
 using namespace std;
 #ifdef LOCAL
@@ -11,14 +11,13 @@ using namespace std;
 #endif // LOCAL
 
 signed main() {
-	cin.tie(0)->sync_with_stdio(0);
 #ifndef LOCAL
-	freopen(".INP", "r", stdin);
-	freopen(".OUT", "w", stdout);
-#else
-	freopen("_input.txt", "r", stdin);
-	freopen("_output.txt", "w", stdout);
-#endif
+	cin.tie(nullptr)->sync_with_stdio(false);
+	if (fopen("${TM_FILENAME/(.+)\..+|.*/$1/:name}.INP", "r")) {
+		freopen("${TM_FILENAME/(.+)\..+|.*/$1/:name}.INP", "r", stdin);
+		freopen("${TM_FILENAME/(.+)\..+|.*/$1/:name}.OUT", "w", stdout);
+	}
+#endif // LOCAL
 
 	;$0
 

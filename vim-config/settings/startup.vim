@@ -33,6 +33,8 @@ set incsearch
 set undolevels=1000
 set backspace=indent,eol,start	
 
+set nofixendofline
+
 syntax on
 
 set nu

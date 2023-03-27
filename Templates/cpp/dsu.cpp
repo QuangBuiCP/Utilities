@@ -1,7 +1,7 @@
 struct DSU {
 	int n;
-	vector<int> sz;
-	vector<int> par;
+	std::vector<int> sz;
+	std::vector<int> par;
 
 	DSU(int _n = 0) : n(_n) {
 		sz.assign(n, 1);
@@ -23,7 +23,7 @@ struct DSU {
 			return false;
 		}
 		if (sz[x] < sz[y]) {
-			swap(x, y);
+			std::swap(x, y);
 		}
 		sz[x] += sz[y];
 		par[y] = x;
