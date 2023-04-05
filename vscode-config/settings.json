@@ -2,7 +2,7 @@
     "workbench.iconTheme": "material-icon-theme",
     
     // Editor config
-    "editor.fontSize": 17,
+    "editor.fontSize": 15,
     "editor.tabCompletion": "on",
     "editor.fontLigatures": true,
     "editor.bracketPairColorization.enabled": true,
