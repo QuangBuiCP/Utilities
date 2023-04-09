@@ -51,6 +51,8 @@
   --background-modifier-active: #4f545c3d;
   --background-modifier-selected: #4f545c52;
   --background-modifier-accent: #ffffff0f;
+  --background-mentioned: ;
+  --background-mentioned-hover: ;
   --background-message-hover: #04040512;
   --background-help-warning: hsla(38, calc(var(--saturation-factor, 1) * 96%), 54%, 0.102);
   --background-help-info: #00b0f41a;
