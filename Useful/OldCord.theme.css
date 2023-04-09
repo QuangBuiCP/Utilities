@@ -6,6 +6,7 @@
   * @authorId 525379333951324190
   * @source https://moyaiu.github.io/OldCord/
 */
+@import url("https://milbits.github.io/oldcord/src/components/imgs.css");
 
 .theme-dark {
   --channeltextarea-background: hsl(218, calc(var(--saturation-factor, 1) * 8%), 27%);
@@ -184,7 +185,6 @@ body {
   --status-positive-background: var(--green);
 }
 
-@import url("https://milbits.github.io/oldcord/src/components/imgs.css");
 
 [fill="#3ba55c"],
 [fill="#3BA55C"],
@@ -418,6 +418,17 @@ body {
 
 .updateIconForeground-2V_zo4 {
   fill: var(--green);
+}
+
+.side-1lrxIh .themed-qqoYp3.item-2GWPIy:has([d="M5 0.5L0 5.5V10.5L5 15.5L10 10.5V5.5L5 0.5ZM8.75 9.9875L5 13.7375L1.25 9.9875V6.0125L5 2.2625L8.75 6.0125V9.9875Z"]) {
+  color: var(--blurple);
+}
+.side-1lrxIh .themed-qqoYp3.item-2GWPIy:has([d="M5 0.5L0 5.5V10.5L5 15.5L10 10.5V5.5L5 0.5ZM8.75 9.9875L5 13.7375L1.25 9.9875V6.0125L5 2.2625L8.75 6.0125V9.9875Z"]):hover {
+  background-color: var(--brand-experiment-10a);
+}
+.side-1lrxIh .themed-qqoYp3.item-2GWPIy:has([d="M5 0.5L0 5.5V10.5L5 15.5L10 10.5V5.5L5 0.5ZM8.75 9.9875L5 13.7375L1.25 9.9875V6.0125L5 2.2625L8.75 6.0125V9.9875Z"]):active {
+  color: #fff;
+  background-color: var(--blurple) !important;
 }
 
 /** Select Menus*/
