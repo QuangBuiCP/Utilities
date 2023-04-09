@@ -10,7 +10,6 @@
 @import url("https://milbits.github.io/oldcord/src/components/vars.css");
 @import url("https://milbits.github.io/oldcord/src/components/color.css");
 @import url("https://milbits.github.io/oldcord/src/components/imgs.css");
-/* @import url("https://milbits.github.io/oldcord/src/components/other.css"); */
 /** Fonts*/
 @font-face {
   font-family: "Whitney";
@@ -1100,5 +1099,3 @@ taken from dtm-17 (im a lazy fuck :p)*/
   left: unset;
   right: 6px;
 }
-
-/* @import url("https://milbits.github.io/oldcord/src/components/profile.css"); */
