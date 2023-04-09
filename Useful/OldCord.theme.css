@@ -7,7 +7,183 @@
   * @source https://moyaiu.github.io/OldCord/
 */
 
-@import url("https://milbits.github.io/oldcord/src/components/vars.css");
+.theme-dark {
+  --channeltextarea-background: hsl(218, calc(var(--saturation-factor, 1) * 8%), 27%);
+  --header-primary: #fff;
+  --header-secondary: #b9bbbe;
+  --channels-default: #8e9297;
+  --interactive-normal: #b9bbbe;
+  --interactive-hover: #dcddde;
+  --interactive-active: #fff;
+  --interactive-muted: hsl(217, calc(var(--saturation-factor, 1) * 8%), 34%);
+  --background-primary: hsl(220, calc(var(--saturation-factor, 1) * 8%), 23%);
+  --background-secondary: hsl(223, calc(var(--saturation-factor, 1) * 7%), 20%);
+  --primary-630: var(--background-secondary);
+  --background-secondary-alt: hsl(220, calc(var(--saturation-factor, 1) * 7%), 17%);
+  --background-tertiary: hsl(216, calc(var(--saturation-factor, 1) * 7%), 14%);
+  --background-accent: #4f545c;
+  --background-floating: #18191c;
+  --background-modifier-hover: #4f545c29;
+  --background-modifier-active: #4f545c3d;
+  --background-modifier-selected: #4f545c52;
+  --background-modifier-accent: #ffffff0f;
+  --background-message-hover: #04040512;
+  --background-help-warning: hsla(38, calc(var(--saturation-factor, 1) * 96%), 54%, 0.102);
+  --background-help-info: #00b0f41a;
+  --modal-background: var(--background-primary);
+  --primary-600: var(--background-primary);
+  --scrollbar-thin-thumb: #202225;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #202225;
+  --scrollbar-auto-track: #2e3338;
+  --scrollbar-auto-scrollbar-color-thumb: #202225;
+  --scrollbar-auto-scrollbar-color-track: #2f3136;
+  --elevation-stroke: 0 0 0 1px #04040526;
+  --elevation-low: 0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d;
+  --elevation-medium: 0 4px 4px #00000029;
+  --elevation-high: 0 8px 16px #0000003d;
+  --logo-primary: #fff;
+  --focus-primary: var(--brand-experiment);
+  --deprecated-card-bg: hsla(216, calc(var(--saturation-factor, 1) * 7%), 14%, 0.6);
+  --deprecated-card-editable-bg: #2022254d;
+  --deprecated-store-bg: #36393f;
+  --deprecated-quickswitcher-input-background: #72767d;
+  --deprecated-quickswitcher-input-placeholder: #ffffff4d;
+  --deprecated-text-input-bg: #0000001a;
+  --deprecated-text-input-border: #0000004d;
+  --deprecated-text-input-border-hover: #040405;
+  --deprecated-text-input-border-disabled: #202225;
+  --deprecated-text-input-prefix: #dcddde;
+  --button-secondary-background: #4f545c;
+  --button-secondary-background-hover: #72767d;
+  --button-secondary-background-active: #72767d;
+}
+.theme-light {
+  --channeltextarea-background: #ebedef;
+  --background-modifier-accent: rgba(6, 6, 7, 0.08);
+  --background-message-hover: rgba(6, 6, 7, 0.02);
+  --elevation-stroke: 0 0 0 1px rgba(6, 6, 7, 0.08);
+  --elevation-low: 0 1px 0 rgba(6, 6, 7, 0.1), 0 1.5px 0 rgba(6, 6, 7, 0.025), 0 2px 0 rgba(6, 6, 7, 0.025);
+  --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.08);
+  --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.16);
+  --logo-primary: var(--brand-experiment);
+  --focus-primary: var(--brand-experiment);
+  --radio-group-dot-foreground: hsl(227, calc(var(--saturation-factor, 1) * 31%), 44%);
+}
+body {
+  --text-muted: #72767d;
+  --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --blurple: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%);
+  --blurple-hover: hsl(227, calc(var(--saturation-factor, 1) * 44%), 59%);
+  --blurple-active: hsl(226, calc(var(--saturation-factor, 1) * 34%), 52%);
+  --blurple-inverted: #f8f9fd;
+  --blurple-inverted-active: #e3e7f8;
+  --text-brand: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%);
+  --brand-260: hsl(226, calc(var(--saturation-factor, 1) * 59%), 89%);
+  --brand-360: hsl(227, calc(var(--saturation-factor, 1) * 58%), 78%);
+  --brand-460: hsl(227, calc(var(--saturation-factor, 1) * 59%), 68%);
+  --brand-500: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%);
+  --brand-560: hsl(227, calc(var(--saturation-factor, 1) * 35%), 53%);
+  --brand-new-560: var(--brand-560);
+  --brand-new-500: var(--blurple);
+  --brand-experiment-100: hsl(228, calc(var(--saturation-factor, 1) * 56%), 98%);
+  --brand-experiment-130: hsl(228, calc(var(--saturation-factor, 1) * 63%), 97%);
+  --brand-experiment-160: hsl(228, calc(var(--saturation-factor, 1) * 60%), 95%);
+  --brand-experiment-200: hsl(229, calc(var(--saturation-factor, 1) * 60%), 93%);
+  --brand-experiment-230: hsl(227, calc(var(--saturation-factor, 1) * 57%), 91%);
+  --brand-experiment-260: hsl(226, calc(var(--saturation-factor, 1) * 59%), 89%);
+  --brand-experiment-300: hsl(227, calc(var(--saturation-factor, 1) * 58%), 86%);
+  --brand-experiment-330: hsl(227, calc(var(--saturation-factor, 1) * 59%), 82%);
+  --brand-experiment-360: hsl(227, calc(var(--saturation-factor, 1) * 58%), 78%);
+  --brand-experiment-400: hsl(226, calc(var(--saturation-factor, 1) * 58%), 72%);
+  --brand-experiment-430: hsl(227, calc(var(--saturation-factor, 1) * 58%), 70%);
+  --brand-experiment-460: hsl(227, calc(var(--saturation-factor, 1) * 59%), 68%);
+  --brand-experiment: var(--blurple);
+  --brand-experiment-500: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%);
+  --brand-experiment-530: hsl(227, calc(var(--saturation-factor, 1) * 45%), 59%);
+  --brand-experiment-560: hsl(227, calc(var(--saturation-factor, 1) * 35%), 53%);
+  --brand-experiment-600: hsl(227, calc(var(--saturation-factor, 1) * 31%), 44%);
+  --brand-experiment-630: hsl(226, calc(var(--saturation-factor, 1) * 31%), 38%);
+  --brand-experiment-660: hsl(226, calc(var(--saturation-factor, 1) * 31%), 34%);
+  --brand-experiment-700: hsl(227, calc(var(--saturation-factor, 1) * 31%), 26%);
+  --brand-experiment-730: hsl(228, calc(var(--saturation-factor, 1) * 31%), 25%);
+  --brand-experiment-760: hsl(227, calc(var(--saturation-factor, 1) * 32%), 22%);
+  --brand-experiment-800: hsl(226, calc(var(--saturation-factor, 1) * 31%), 19%);
+  --brand-experiment-830: hsl(225, calc(var(--saturation-factor, 1) * 32%), 15%);
+  --brand-experiment-860: hsl(225, calc(var(--saturation-factor, 1) * 32%), 10%);
+  --brand-experiment-900: hsl(228, calc(var(--saturation-factor, 1) * 29%), 3%);
+  --brand-experiment-05a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 5%);
+  --brand-experiment-10a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 10%);
+  --brand-experiment-15a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 15%);
+  --brand-experiment-20a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 20%);
+  --brand-experiment-25a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 25%);
+  --brand-experiment-30a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 30%);
+  --brand-experiment-35a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 35%);
+  --brand-experiment-40a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 40%);
+  --brand-experiment-45a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 45%);
+  --brand-experiment-50a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 50%);
+  --brand-experiment-55a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 55%);
+  --brand-experiment-60a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 60%);
+  --brand-experiment-65a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 65%);
+  --brand-experiment-70a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 70%);
+  --brand-experiment-75a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 75%);
+  --brand-experiment-80a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 80%);
+  --brand-experiment-85a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 85%);
+  --brand-experiment-90a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 90%);
+  --brand-experiment-95a: hsl(227, calc(var(--saturation-factor, 1) * 58%), 65%, 95%);
+  --red-inverted: #fef6f6;
+  --red-inverted-active: #fcdada;
+  --yellow: hsl(38, calc(var(--saturation-factor, 1) * 96%), 54%);
+  --yellow-360: var(--yellow);
+  --status-yellow-560: var(--yellow);
+  --yellow-hover: #e19517;
+  --yellow-inverted: #fffbf4;
+  --yellow-inverted-active: #feedd1;
+  --green-inverted: #f6fbf9;
+  --green-inverted-active: #d9f0e6;
+  --green: hsl(153, calc(var(--saturation-factor, 1) * 46%), 49%);
+  --status-green-600: var(--green);
+  --green-360: var(--green);
+  --green-hover: hsl(153, calc(var(--saturation-factor, 1) * 46%), 44%);
+  --green-active: hsl(152, calc(var(--saturation-factor, 1) * 46%), 39%);
+  --green-transparent: hsl(153, calc(var(--saturation-factor, 1) * 46%), 49%, 20%);
+  --info-positive-foreground: var(--green);
+  --text-positive: var(--green);
+  --red: hsl(0deg, calc(var(--saturation-factor, 1) * 85%), 61%);
+  --red-hover: hsl(0deg, calc(var(--saturation-factor, 1) * 66%), 55%);
+  --red-active: hsl(0deg, calc(var(--saturation-factor, 1) * 54%), 49%);
+  --red-transparent: hsl(0, calc(var(--saturation-factor, 1) * 85%), 61%, 10%);
+  --button-danger-background-active: var(--red-active);
+  --button-danger-background: var(--red);
+  --text-danger: var(--red);
+  --info-danger-foreground: var(--red);
+  --status-danger-background: var(--red);
+  --font-display: var(--font-primary);
+  --control-brand-foreground: var(--brand-experiment);
+  --bdfdb-blurple: var(--brand-experiment);
+  --bdfdb-green: var(--green);
+  /* activity colors*/
+  --twitch-dark: hsl(262, calc(var(--saturation-factor, 1) * 47%), 36%);
+  --twitch: hsl(262, calc(var(--saturation-factor, 1) * 47%), 40%);
+  --youtube-dark: hsl(0, calc(var(--saturation-factor, 1) * 73%), 41%);
+  --youtube: hsl(0deg, calc(var(--saturation-factor, 1) * 73%), 46%);
+  --spotify: hsl(141, calc(var(--saturation-factor, 1) * 72%), 42%);
+  --spotify-dark: hsl(141, calc(var(--saturation-factor, 1) * 72%), 40%);
+  --xbox-dark: hsl(120, calc(var(--saturation-factor, 1) * 77%), 26%);
+  --xbox: hsl(120, calc(var(--saturation-factor, 1) * 77%), 27%);
+  --playstation-dark: hsl(220, calc(var(--saturation-factor, 1) * 96%), 27%);
+  --playstation2: hsl(220, calc(var(--saturation-factor, 1) * 96%), 31%);
+  --crunchyroll-dark: hsl(29, calc(var(--saturation-factor, 1) * 93%), 55%);
+  --crunchyroll: hsl(29, calc(var(--saturation-factor, 1) * 93%), 60%);
+}
+* {
+  --text-danger: var(--red) !important;
+  --input-grey: #72767d;
+  --status-danger: var(--red) !important;
+  --status-positive-background: var(--green);
+}
+
 @import url("https://milbits.github.io/oldcord/src/components/imgs.css");
 
 [fill="#3ba55c"],
@@ -223,10 +399,6 @@
 
 .folderIconWrapper-1oRIZr[style*="background-color: rgba(88, 101, 242, 0.4);"] {
   background-color: var(--brand-experiment-40a) !important;
-}
-
-.mentionButton-3C5YMI {
-  --text-link: var(--brand-experiment);
 }
 
 /** Add Friend Chip*/
@@ -608,13 +780,6 @@
 .banner-3Uu4yV,
 .container-1eD8xH,
 .item-1TA5qI .radioBar-1XgZqD circle,
-/* status picker profile*/
-.accountProfilePopoutWrapper-3GskID .bannerSVGWrapper-2CLfzN,
-.accountProfilePopoutWrapper-3GskID .avatarWrapper-eenWra,
-.accountProfilePopoutWrapper-3GskID .profileBadges-2pItdR,
-.accountProfilePopoutWrapper-3GskID .userProfileInner-1ngKnf:before,
-.accountProfilePopoutWrapper-3GskID [id="account-divider-1"],
-.accountProfilePopoutWrapper-3GskID .userPopoutOverlayBackground-3A0Pcz div:not(.menu-2TXYjN, .menu-2-eHMB *),
 
 .unreadIcon-3dqgX9,
 .container-1QtPKm svg,
@@ -630,37 +795,6 @@
   background: url("https://discord.com/assets/fd91131ea693096d6be5e8aa99d18f9e.jpg") center/100% no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-/** make the bio not cut off*/
-.lineClamp2Plus-2SCQmH {
-  -webkit-line-clamp: 190 !important;
-  max-height: 112px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.lineClamp2Plus-2SCQmH::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 99px;
-  max-height: 20px;
-  padding-right: 17px;
-}
-.lineClamp2Plus-2SCQmH::-webkit-scrollbar {
-  width: 4px;
-}
-.lineClamp2Plus-2SCQmH:hover::-webkit-scrollbar-track {
-  background: 0 0;
-  border-radius: 10px;
-}
-.lineClamp2Plus-2SCQmH:hover::-webkit-scrollbar-thumb {
-  background: var(--bg-overlay-6, var(--background-tertiary));
-  border-radius: 999px;
-}
-
-.scroller-15bIdk::-webkit-scrollbar-thumb,
-.infoScroller-3MqKC5::-webkit-scrollbar-thumb {
-  background: var(--background-tertiary);
-  border: 2px solid var(--background-secondary);
 }
 
 /** vc debug thing*/
