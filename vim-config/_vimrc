@@ -64,7 +64,7 @@ set ignorecase
 set incsearch
 
 set undolevels=1000
-set backspace=indent,eol,start	
+set backspace=indent,eol,start  
 
 set nofixendofline
 
@@ -214,7 +214,8 @@ set noundofile
 " Fix Ctrl + Space in terminal mode cause weird text
 tnoremap <S-space> <space>
 
-set guifont=Consolas:h15
+set guifont=Consolas:h13
+au GUIEnter * simalt ~x
 " set guifont=Bitstream\ Vera\ Sans\ Mono:h15
 
 cnoreabbrev mktemp r D:/QuangBui/_Code/C++/Cate/Templates/Saved/oicode-vim.cpp

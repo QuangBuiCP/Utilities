@@ -24,6 +24,7 @@ Path/tp.cmd
 Path/vlc.*
 Path/proexp.*
 Path/speedtest.exe
+Path/bat.exe
 
 
 vim-config/settings/python_provider.vim

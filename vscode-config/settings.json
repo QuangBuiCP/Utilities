@@ -140,6 +140,7 @@
         "*.vim": "vimrc"
     },
     "editor.unicodeHighlight.nonBasicASCII": false,
+    "git.openRepositoryInParentFolders": "never",
 
     // Setting to use Far manager in terminal
     // "workbench.colorCustomizations" : {
