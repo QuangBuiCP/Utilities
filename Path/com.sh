@@ -14,14 +14,15 @@ val=$?
 
 RED='\033[1;31m'
 GREEN="\033[1;32m"
+NC='\033[0m'
 
 echo 
 
 if [ $val == 0 ]
 then
-	echo -e "${GREEN}Compilation ${GREEN}finished ${GREEN}successfully"
+	echo -e "${GREEN}Compilation ${GREEN}finished ${GREEN}successfully${NC}"
 	exit 0
 else
-	echo -e "${RED}Compilation ${RED}failed"
+	echo -e "${RED}Compilation ${RED}failed${NC}"
 	exit 1
 fi

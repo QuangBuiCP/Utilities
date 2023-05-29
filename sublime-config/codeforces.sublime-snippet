@@ -10,12 +10,26 @@ using namespace std;
 #define debug(...)
 #endif // LOCAL
 
+void test_case() {
+	;$0
+}
+
+inline void Reset() {
+}
+
 signed main() {
 #ifndef LOCAL
 	cin.tie(nullptr)->sync_with_stdio(false);
 #endif // LOCAL
 
-	;$0
+	int tt = 1;
+	cin >> tt;
+	while (tt--) {
+		test_case();
+		if (tt) {
+			Reset();
+		}
+	}
 
 #ifdef LOCAL
 	cout << '\n' << clock() << "ms.";
@@ -23,8 +37,8 @@ signed main() {
 	return 0;
 }
 ]]></content>
-  <tabTrigger>oicode</tabTrigger>
-  <description>C++ Template</description>
+  <tabTrigger>codeforces</tabTrigger>
+  <description>Codeforces template</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope >source.python</scope > -->
 </snippet>
