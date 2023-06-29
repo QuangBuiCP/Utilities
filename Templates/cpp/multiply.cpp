@@ -1,12 +1,12 @@
 template<typename T, typename M>
 T multiply(const T& x, const T& y, const M& md) {
 	if (y == 0) {
-		return 1;
+		return 0;
 	}
 	T ret = multiply(x, y / 2, md);
-	ret = (1LL * ret * ret) % md;
-	if (y % 2) {
-		ret = (1LL * ret * x) % md;
+	if (y & 1) {
+		return ((ret + ret) % md + x % md) % md;
+	} else {
+		return (ret + ret) % md;
 	}
-	return ret;
 }

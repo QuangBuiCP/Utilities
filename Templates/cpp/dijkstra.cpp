@@ -2,15 +2,15 @@ template<typename T>
 struct Dijkstra {
 	const T INF = numeric_limits<T>::max();
 
-	struct state {
+	struct State {
 		int u;
 		T dist;
 
-		state() {}
+		State() {}
 
-		state(int _u, T _dist) : u(_u), dist(_dist) {}
+		State(int _u, T _dist) : u(_u), dist(_dist) {}
 
-		bool operator<(const state &other) const {
+		bool operator < (const State &other) const {
 			return dist > other.dist;
 		}
 	};
@@ -29,17 +29,17 @@ struct Dijkstra {
 		graph.resize(n);
 	}
 
-	void add_directional_edge(int u, int v, T weight) {
+	void add_directed_edge(int u, int v, T weight) {
 		graph[u].emplace_back(v, weight);
 	}
 
-	void add_bidirectional_edge(int u, int v, T weight) {
+	void add_edge(int u, int v, T weight) {
 		add_directional_edge(u, v, weight);
 		add_directional_edge(v, u, weight);
 	}
 
 	void run(const vector<int> &source) {
-		priority_queue<state> pq;
+		priority_queue<State> pq;
 		dist.assign(n, INF);
 		parent.assign(n, -1);
 
@@ -51,7 +51,9 @@ struct Dijkstra {
 		}
 
 		while (!pq.empty()) {
-			auto [u, cur_dist] = pq.top();
+			State top = pq.top();
+			int u = top.u;
+			T cur_dist = top.dist;
 			pq.pop();
 
 			if (dist[u] != cur_dist) continue;
