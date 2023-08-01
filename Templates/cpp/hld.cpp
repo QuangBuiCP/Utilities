@@ -4,7 +4,6 @@
 //   which gives you the opportunity to process queries on pathes and subtrees simultaneously in the same segment tree.
 // TODO: Verify the code and write it with "struct"
 int n;
-int val[N];
 int par[N], depth[N], subtree[N];
 vector<int> g[N], ng[N];
 
@@ -32,9 +31,7 @@ int timer = 0;
 void dfs_hld(int u, int pre) {
 	tin[u] = ++timer;
 	for (int v : ng[u]) if (v != pre) {
-		if (v == ng[u][0]) {
-			chain_root[v] = chain_root[u];
-		}
+		chain_root[v] = (v == ng[u][0] ? chain_root[u] : v);
 		depth[v] = depth[u] + 1;
 		dfs_hld(v, u);
 	}
@@ -50,14 +47,8 @@ void build_hld(int root) {
 			}
 		}
 	}
-	iota(chain_root + 1, chain_root + n + 1, 1);
 	dfs_size(root, -1);
 	dfs_hld(root, -1);
-}
-
-void add_edge(int x, int y) {
-	g[x].push_back(y);
-	g[y].push_back(x);
 }
 
 int get_lca(int x, int y) {
@@ -66,7 +57,7 @@ int get_lca(int x, int y) {
 			swap(x, y);
 		x = par[chain_root[x]];
 	}
-	return (depth[x] > depth[y] ? x : y);
+	return (depth[x] < depth[y] ? x : y);
 }
 
 ... query_path(int x, int y) {
@@ -76,7 +67,7 @@ int get_lca(int x, int y) {
 			swap(x, y);
 		int from = tin[chain_root[x]];
 		int to = tin[x];
-		...;
+		...
 		x = par[chain_root[x]];
 	}
 	if (depth[x] > depth[y])

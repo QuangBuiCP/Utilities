@@ -1,33 +1,66 @@
-// This is 0-index
 struct Line {
-	int m, b;
-	int operator()(int x) {
-		return m * x + b;
+	long long a, b;
+	Line(long long a = 0, long long b = INF) : a(a), b(b) {}
+	long long get(long long x) {
+		return a * x + b;
 	}
-} st[N * 4];
+};
 
-void Insert(int x, int lx, int rx, Line seg) {
-	if (lx + 1 == rx) {
-		if (seg(lx) > st[x](lx)) st[x] = seg;
-		return;
+struct LiChao {
+	struct Node {
+		Line line;
+		int ch[2] = {0, 0};
+	};
+
+	vector<Node> T;
+	LiChao(int n) : T(n + 1) {}
+
+	void Insert(int root, Line x) {
+		int n = root;
+		int tl = -MAX, tr = MAX;
+		while (tl <= tr) {
+			int md = (tl + tr) >> 1;
+			if (T[n].line.get(tl) > x.get(tl)) {
+				swap(T[n].line, x);
+			}
+			if (T[n].line.get(tr) <= x.get(tr)) {
+				return;
+			}
+			if (T[n].line.get(md) <= x.get(md)) {
+				tl = md + 1;
+				if (!T[n].ch[1]) {
+					T[n].ch[1] = T.size();
+					T.emplace_back();
+				}
+				n = T[n].ch[1];
+			} else {
+				swap(T[n].line, x);
+				tr = md;
+				if (!T[n].ch[0]) {
+					T[n].ch[0] = T.size();
+					T.emplace_back();
+				}
+				n = T[n].ch[0];
+			}
+		}
 	}
 
-	int m = (lx + rx) / 2;
-	if (st[x].m > seg.m) swap(seg, st[x]);
-	if (st[x](m) < seg(m)) {
-		swap(st[x], seg);
-		Insert(2 * x + 1, lx, m, seg);
-	} else {
-		Insert(2 * x + 2, m, rx, seg);
+	long long Query(int root, long long x) {
+		long long res = INF;	 // -INF for maximum
+		int n = root;
+		int tl = -MAX, tr = MAX;
+		while (tl <= tr) {
+			if (!n) break;
+			int md = (tl + tr) >> 1;
+			res = min(res, T[n].line.get(x));  // max() for maximum
+			if (x <= md) {
+				tr = md;
+				n = T[n].ch[0];
+			} else {
+				tl = md + 1;
+				n = T[n].ch[1];
+			}
+		}
+		return res;
 	}
-}
-
-int Query(int x, int lx, int rx, int i) {
-	if (lx + 1 == rx) return st[x](i);
-	int m = (lx + rx) / 2;
-	if (i < m) {
-		return max(st[x](i), Query(2 * x + 1, lx, m, i));
-	} else {
-		return max(st[x](i), Query(2 * x + 2, m, rx, i));
-	}
-}
+};

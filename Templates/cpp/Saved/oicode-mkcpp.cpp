@@ -1,3 +1,4 @@
+// QuangBuiCP
 #include "bits/stdc++.h"
 using namespace std;
 #ifdef LOCAL
@@ -8,12 +9,13 @@ using namespace std;
 
 signed main() {
 #ifndef LOCAL
-	ios_base::sync_with_stdio(false);
-	cin.exceptions(cin.failbit);
-	cin.tie(0);
-#endif	// LOCAL
+	cin.tie(nullptr)->sync_with_stdio(false);
+#endif // LOCAL
 
 	;
 
+#ifdef LOCAL
+	cout << '\n' << clock() << "ms.";
+#endif // LOCAL
 	return 0;
 }
