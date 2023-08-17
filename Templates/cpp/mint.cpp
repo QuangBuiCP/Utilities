@@ -141,7 +141,8 @@ U& operator>>(U& stream, Modular<T>& number) {
 	stream >> x;
 	number.value = Modular<T>::normalize(x);
 	return stream;
-} 
+}
+
 /*
 using ModType = int;
  
@@ -154,7 +155,7 @@ using Mint = Modular<VarMod>;
 #warning Note: Check the MOD value 
 constexpr long long md = 998244353;
 using Mint = Modular<std::integral_constant<decay<decltype(md)>::type, md>>;
- 
+
 /*
 vector<Mint> fact(1, 1);
 vector<Mint> inv_fact(1, 1);
