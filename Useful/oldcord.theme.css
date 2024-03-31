@@ -7,6 +7,7 @@
   * @description Restores discord's 2020 UI with some changes
 */
 @import url("https://milbits.github.io/oldcord/src/components/vars.css");
+@import url("https://davart154.github.io/Themes/Icon%20Revert%202023/2023%20Icon%20Revert.css");
 /*@import url("https://milbits.github.io/oldcord/src/components/color.css");*/
 
 [fill="#3ba55c"],
@@ -271,39 +272,6 @@
 	border-radius: 4px;
 }
 
-/** Mentions/Pings*/
-.wrapper__53064 {
-	font-weight: 500;
-	color: var(--brand-experiment-460);
-	background: var(--brand-experiment-10a);
-	padding: 0 2px;
-}
-.wrapper__53064:hover {
-	background: var(--brand-experiment);
-	color: var(--brand-experiment-100);
-}
-
-.interactive {
-	transition: background-color 50ms ease-out, color 50ms ease-out;
-	cursor: pointer;
-	text-decoration: none !important;
-}
-.mentioned_fa6fd2 .interactive {
-	/* make background transparent when mentioned*/
-	background: transparent;
-}
-.interactive:hover {
-	color: var(--white-500);
-	background-color: var(--brand-experiment);
-}
-
-.icon_b30891:has([d^="M10.99 3.16A1 1 0 1 0 9 2.84L8.15"]) {
-	display: none;
-}
-.channelWithIcon:has([d^="M10.99 3.16A1 1 0 1 0 9 2.84L8.15"]) > .name__02f7a:before {
-	content: "#";
-}
-
 /** Log Out, Server Boost, Delete Server Buttons*/
 .side_b4b3f6 .item__48dda {
 	border-radius: 3px;
@@ -551,7 +519,6 @@
 }
 
 
-@import url("https://davart154.github.io/Themes/Icon%20Revert%202023/2023%20Icon%20Revert.css");
 @import url("https://milbits.github.io/oldcord/src/components/imgs.css");
 /* @import url("https://milbits.github.io/oldcord/src/components/other.css"); */
 
@@ -590,24 +557,6 @@
 	font-style: italic;
 	font-family: "Whitney";
 	src: url(https://milbits.github.io/oldcord/src/assets/cursiveBold.woff2);
-}
-
-/** revert reactions modal*/
-.theme-dark .reactionSelected__16345 {
-	background-color: rgba(79, 84, 92, 0.3);
-	border-radius: 2px;
-	margin-bottom: 1px;
-}
-.emoji__32c91 {
-	width: 1rem;
-	height: 1rem;
-}
-.reactionDefault_de3361 {
-	border-radius: 2px;
-	margin-bottom: 1px;
-}
-[class*="reaction"] .text-sm-bold_ad6d44 {
-	font-weight: 500 !important;
 }
 
 /** revert switches*/
