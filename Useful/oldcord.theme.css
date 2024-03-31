@@ -571,7 +571,7 @@ taken from dtm-17 (im a lazy fuck :p)*/
 	padding: 0 !important;
 	background-color: #303339 !important;
 }
-
+/*
 .accountProfilePopoutWrapper_d4887f {
 	left: 0;
 }
@@ -582,7 +582,7 @@ taken from dtm-17 (im a lazy fuck :p)*/
 .accountProfilePopoutWrapper_d4887f > div,
 .accountProfilePopoutWrapper_d4887f .menu-KSaHL1 .submenu-1apzyU {
 	border-radius: 4px;
-}
+}*/
 
 /** revert mosaic image system border*/
 /* use https://github.com/Tanza3D/discord-no-mosaic for a working fix*/
