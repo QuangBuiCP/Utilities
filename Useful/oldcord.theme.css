@@ -6,11 +6,11 @@
   * @source https://github.com/milbits/oldcord
   * @description Restores discord's 2020 UI with some changes
 */
-@import url("https://milbits.github.io/oldcord/src/components/vars.css");
-
-/* ok this new icon things suck */
+/* this is byfar the most painful fix I have ever did */
 /* @import url("https://davart154.github.io/Themes/Icon%20Revert%202023/2023%20Icon%20Revert.css"); */
-@import url("https://this.redh.dev/DiscordThemes/IconRevert2k23Enhanced/IconRevert2k23Enhanced.theme.css");
+@import url("https://raw.githubusercontent.com/thisRedH/DiscordThemes/main/IconRevert2k23Enhanced/IconRevert2k23Enhanced.theme.css");
+
+@import url("https://milbits.github.io/oldcord/src/components/vars.css");
 
 /*@import url("https://milbits.github.io/oldcord/src/components/color.css");*/
 
