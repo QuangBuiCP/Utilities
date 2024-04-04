@@ -8,9 +8,7 @@
 */
 @import url("https://milbits.github.io/oldcord/src/components/vars.css");
 
-/* Temporary workaround for some icons, need to change this later */
-@import url("https://raw.githubusercontent.com/thisRedH/Themes/main/Icon%20Revert%202023/2023%20Icon%20Revert.css");
-/* @import url("https://davart154.github.io/Themes/Icon%20Revert%202023/2023%20Icon%20Revert.css"); */
+@import url("https://davart154.github.io/Themes/Icon%20Revert%202023/2023%20Icon%20Revert.css");
 
 /*@import url("https://milbits.github.io/oldcord/src/components/color.css");*/
 
