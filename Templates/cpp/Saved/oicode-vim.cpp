@@ -1,5 +1,4 @@
-// Author: QuangBuiCP
-// Editor: GVim
+// QuangBuiCP
 #include "bits/stdc++.h"
 using namespace std;
 #ifdef LOCAL
@@ -8,14 +7,18 @@ using namespace std;
 #define debug(...)
 #endif // LOCAL
 
+#define SZ(a) (int)(a).size()
+#define ALL(a) (a).begin(),(a).end()
+
 signed main() {
 #ifndef LOCAL
-	ios_base::sync_with_stdio(false);
-	cin.exceptions(cin.failbit);
-	cin.tie(0);
+  cin.tie(nullptr)->sync_with_stdio(false);
 #endif // LOCAL
 
-	;
+  ;
 
-	return 0;
+#ifdef LOCAL
+  cerr << '\n' << clock() << "ms.";
+#endif // LOCAL
+  return 0;
 }
